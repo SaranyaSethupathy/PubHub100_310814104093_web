@@ -11,7 +11,6 @@ import javax.servlet.http.HttpSession;
 import com.pubhub.dao.UserDAO;
 import com.pubhub.model.User;
 
-
 @WebServlet("/RegisterServlet")
 public class RegisterServlet extends HttpServlet {
 

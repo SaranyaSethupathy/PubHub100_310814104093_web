@@ -8,7 +8,7 @@
 </head>
 <body bgcolor="pink">
 	<h1>
-		<b>ADD BOOK</b>
+	 	<b>ADD BOOK</b>
 	</h1>
 	<form action="AddBookServlet" method="post">
 		<font face="Times New Roman" size="+3" color="red"> <br>

@@ -15,9 +15,10 @@ import com.pubhub.model.Book;
 @WebServlet("/DeleteBookServlet")
 public class DeleteBookServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		PrintWriter out=response.getWriter();
+		PrintWriter out = response.getWriter();
 		out.print("book deleted");
 	}
 
@@ -35,7 +36,7 @@ public class DeleteBookServlet extends HttpServlet {
 
 			dao.delete(book.getId());
 			response.sendRedirect("home.jsp");
-						
+
 		} catch (Exception e) {
 
 			e.printStackTrace();
@@ -43,4 +44,3 @@ public class DeleteBookServlet extends HttpServlet {
 
 	}
 }
-

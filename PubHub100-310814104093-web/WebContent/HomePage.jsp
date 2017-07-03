@@ -7,7 +7,7 @@
 <title>HOME PAGE</title>
 </head>
 <body bgcolor="#FFB6C1">
-
+ 
 	<ul>
 		<li><font face="Times New Roman" size="+3" color="red">
 		 <b>----------------------PUBHUB 100----------------------</b><br> <b>WELCOME TO MY PAGE , <%

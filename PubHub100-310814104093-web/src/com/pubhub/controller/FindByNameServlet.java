@@ -22,22 +22,22 @@ public class FindByNameServlet extends HttpServlet {
 			throws ServletException, IOException {
 		String name = request.getParameter("name");
 		BookDAO dao = new BookDAO();
-		
+
 		try {
-			List<Book>books = dao.findByName(name);
+			List<Book> books = dao.findByName(name);
 			System.out.println(books.size());
 			if (books.size() > 0) {
-			
+
 				RequestDispatcher rd = request.getRequestDispatcher("searchresult.jsp");
 				request.setAttribute("books", books);
 				rd.forward(request, response);
 				PrintWriter out = response.getWriter();
 				out.print("RESULT");
 			} else {
-				
+
 				PrintWriter out = response.getWriter();
 				out.print("THERE ARE NO BOOKS");
-				
+
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -16,7 +16,7 @@ NAME :<input type="text" name="name">
 <button type="submit">UPDATE</button>
 </font>
 </form>
-
+ 
 
 </body>
 </html>
