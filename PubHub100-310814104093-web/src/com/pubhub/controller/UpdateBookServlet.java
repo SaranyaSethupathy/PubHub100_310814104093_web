@@ -1,4 +1,4 @@
-package com.pubhub.controller; 
+package com.pubhub.controller;  
 
 import java.io.IOException;
 import javax.servlet.ServletException;
